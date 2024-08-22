@@ -1,0 +1,272 @@
+* {
+    font-family: sans-serif;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    height: 5%;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    padding: 20px 20px;
+
+    transition: background-color 0.3s ease;
+
+}
+.navbar:hover{
+    background-color: white;
+    
+
+}
+.navbar button:hover{
+    background-color: #D3D3D3;
+    transform: scale(1.1,1.1);
+    cursor: pointer;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+.navbar ul li{
+        display: inline;
+
+}
+.navbar ul li button{
+    background-color: transparent;
+    font-size: 80%;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: white;
+}
+
+.hero-section {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.info-section {
+    width: 100%;
+    height: 75vh;
+    background-size: cover;
+    text-align: center;
+    font-size: 85%;
+    line-height: 20px;
+}
+
+hr {
+    border-color: black;
+    background-color: black;
+}
+
+.section-title {
+    padding-top: 70px;
+    text-align: center;
+}
+
+.section-actions {
+    padding-bottom: 30px;
+}
+
+
+.hero-section#model3 {
+    background-image: url(TeslaModel3.jpg);
+}
+
+.hero-section#modely {
+    background-image: url(TeslaModelY.jpg);
+}
+
+.hero-section#modelx {
+    background-image: url(TeslaModelX.jpg);
+}
+
+.hero-section#models {
+    background-image: url(TeslaModelS.jpg);
+}
+
+.hero-section#cybertruck {
+    background-image: url(TeslaCybertruck.jpg);
+}
+
+.hero-section#solarpanels {
+    background-image: url(TeslaSolarPanels.jpg);
+}
+
+.hero-section#solarroof {
+    background-image: url(TeslaSolarRoof.png);
+}
+
+.hero-section#powerwall {
+    background-image: url(TeslaPowerwall.jpg);
+}
+
+.hero-section#accessories {
+    background-image: url(TeslaAccessories.png);
+}
+
+.info-section#info {
+    background-color: black;
+}
+
+.hero-section h1 {
+    font-size: 3.5em;
+    padding: 0;
+    margin: 0;
+}
+
+.hero-section h1:hover {
+    color: #3393ff;
+    transition-duration: 0.4s;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.hero-section h3:hover {
+    color: #3393ff;
+    transition-duration: 0.4s;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.hero-section h2:hover {
+    color: #3393ff;
+    transition-duration: 0.4s;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+a {
+    transition-duration: 0.4s;
+    color: white;
+
+}
+
+a:hover {
+    color: #3393ff;
+    transition-duration: 0.4s;
+}
+
+button {
+    transition-duration: 0.4s;
+    font-weight: bold;
+    border-radius: 5%;
+    border: none;
+    height: 3em;
+    width: 20em;
+}
+
+button.primary {
+    background-color: #3393ff;
+    color: white;
+}
+
+button.primary:hover {
+    background-color: white;
+    color: #3393ff;
+    cursor: pointer;
+    outline: 3px solid #3393ff;
+    outline-offset: 7px;
+    resize: both;
+    overflow: auto;
+    animation-name: example2;
+    animation-duration: 2s;
+    transform: scale(1.1,1.1);
+}
+
+button.secondary {
+    background-color: white;
+}
+
+button.secondary:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    resize: both;
+    overflow: auto;
+    outline: 3px solid white;
+    outline-offset: 7px;
+    animation-name: example;
+    animation-duration: 2s;
+    transform: scale(1.1,1.1);
+}
+
+@keyframes example {
+    0% {
+        background-color: white;
+        left: 0px;
+        top: 0px;
+    }
+
+    25% {
+        background-color: black;
+        left: 200px;
+        top: 0px;
+    }
+
+    50% {
+        background-color: white;
+        left: 200px;
+        top: 200px;
+    }
+
+    75% {
+        background-color: black;
+        left: 0px;
+        top: 200px;
+    }
+
+    100% {
+        background-color: white;
+        left: 0px;
+        top: 0px;
+    }
+}
+
+@keyframes example2 {
+    0% {
+        background-color: white;
+        left: 0px;
+        top: 0px;
+    }
+
+    25% {
+        background-color: #3393ff;
+        left: 200px;
+        top: 0px;
+    }
+
+    50% {
+        background-color: white;
+        left: 200px;
+        top: 200px;
+    }
+
+    75% {
+        background-color: #3393ff;
+        left: 0px;
+        top: 200px;
+    }
+
+    100% {
+        background-color: white;
+        left: 0px;
+        top: 0px;
+    }
+}
